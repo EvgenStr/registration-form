@@ -1,0 +1,51 @@
+body {
+  display: flex;
+}
+
+.form-container {
+  /* max-width: 350px; */
+  padding: 10px;
+  margin: 50px auto;
+  background-color: rgb(242, 243, 247);
+}
+.registration-form {
+  width: 100%;
+  box-sizing: border-box;
+}
+legend {
+  font-size: 22px;
+  text-align: center;
+  padding: 5px 15px;
+}
+.names {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  border-top: 2px solid black;
+  text-align: center;
+  width: 90%;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+}
+.first-name,
+.last-name {
+   /* display: inline-block; */
+  max-width: 40%;
+}
+
+.width-100 {
+  /* width: 98%; */
+  max-width: 320px;
+}
+
+.register-btn {
+  display: block;
+}
