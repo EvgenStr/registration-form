@@ -1,49 +1,57 @@
+* {
+  box-sizing: border-box;
+}
 body {
   display: flex;
 }
 
 .form-container {
-  /* max-width: 350px; */
+  max-width: 90%;
+  width: 320px;
   padding: 10px;
   margin: 50px auto;
   background-color: rgb(242, 243, 247);
+  box-sizing: border-box;
 }
 .registration-form {
-  width: 100%;
-  box-sizing: border-box;
+}
+fieldset {
+  border-top: 2px solid black;
+  text-align: center;
+  margin: 0 auto;
 }
 legend {
   font-size: 22px;
   text-align: center;
   padding: 5px 15px;
 }
-.names {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-}
-fieldset {
+.fields {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   align-items: center;
-  border-top: 2px solid black;
-  text-align: center;
-  width: 90%;
-  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+}
+.fields> input{
+  margin-top: 20px;
+}
 
-  margin: 0 auto;
+.names {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.terms{
+  align-self: start;
 }
 .first-name,
 .last-name {
-   /* display: inline-block; */
-  max-width: 40%;
+  max-width: 48%;
 }
 
 .width-100 {
-  /* width: 98%; */
-  max-width: 320px;
+  width: 100%;
 }
 
 .register-btn {
