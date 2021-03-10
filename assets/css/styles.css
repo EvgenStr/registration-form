@@ -4,7 +4,9 @@
 body {
   display: flex;
 }
-
+input{
+  margin-top: 15px;
+}
 .form-container {
   max-width: 90%;
   width: 320px;
@@ -34,7 +36,7 @@ legend {
   padding: 10px;
 }
 .fields> input{
-  margin-top: 20px;
+ 
 }
 
 .names {
@@ -43,7 +45,7 @@ legend {
   width: 100%;
 }
 .terms{
-  align-self: start;
+  /* align-self: start; */
 }
 .first-name,
 .last-name {
