@@ -1,51 +1,41 @@
 * {
   box-sizing: border-box;
 }
-body {
-  display: flex;
+
+label {
+  vertical-align: top;
 }
-input{
+form > input {
   margin-top: 15px;
 }
 .form-container {
   max-width: 90%;
-  width: 320px;
+  width: 350px;
   padding: 10px;
   margin: 50px auto;
   background-color: rgb(242, 243, 247);
-  box-sizing: border-box;
 }
-.registration-form {
-}
+
 fieldset {
   border-top: 2px solid black;
   text-align: center;
   margin: 0 auto;
 }
+
 legend {
   font-size: 22px;
   text-align: center;
   padding: 5px 15px;
 }
-.fields {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-}
-.fields> input{
- 
-}
 
 .names {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
-.terms{
-  /* align-self: start; */
+.terms-container {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
 }
 .first-name,
 .last-name {
@@ -57,5 +47,15 @@ legend {
 }
 
 .register-btn {
-  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: rgb(98, 174, 101);
+  background: linear-gradient(
+    180deg,
+    rgba(98, 174, 101, 1) 0%,
+    rgba(75, 152, 74, 1) 100%
+  );
+  color: white;
 }

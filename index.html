@@ -12,27 +12,23 @@
 
 <body>
   <div class="form-container">
-    <form class="registration-form">
+    <form>
       <fieldset>
         <legend>Register</legend>
         <span>Create your account. it`s free and only takes a minute.</span>
       </fieldset>
-      <div class="fields">
-        <div class="names">
-          <input name="firstName" class="first-name" type="text">
-          <input name="lastName" class="last-name" type="text">
-        </div>
-
-        <input class="width-100" type="email">
-        <input class="width-100" type="password">
-        <input class="width-100" type="password">
-        <div>
-          <input id="terms" class="terms" type="checkbox">
-          <label for="terms">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>.</label>
-        </div>
+      <div class="names">
+        <input name="firstName" class="first-name" type="text">
+        <input name="lastName" class="last-name" type="text">
       </div>
-      <button class="register-btn">Register Now</button>
-
+      <input class="width-100" type="email">
+      <input class="width-100" type="password">
+      <input class="width-100" type="password">
+      <div class="terms-container">
+        <input id="terms" class="terms" type="checkbox">
+        <label for="terms">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>.</label>
+      </div>
+      <button class="register-btn width-100">Register Now</button>
     </form>
   </div>
 </body>
