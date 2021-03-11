@@ -5,8 +5,9 @@
 label {
   vertical-align: top;
 }
-form > input {
+form input {
   margin-top: 15px;
+  border-color: gray;
 }
 .form-container {
   max-width: 90%;
@@ -17,7 +18,7 @@ form > input {
 }
 
 fieldset {
-  border-top: 2px solid black;
+  border-top: 2px solid gray;
   text-align: center;
   margin: 0 auto;
 }
