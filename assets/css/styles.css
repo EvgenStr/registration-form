@@ -1,13 +1,18 @@
+:root {
+  --color-gray: 2px solid rgb(146, 139, 139);
+}
+
 * {
   box-sizing: border-box;
 }
 
 label {
-  vertical-align: top;
+  vertical-align: text-top;
 }
-form input {
+form .input {
   margin-top: 15px;
-  border-color: gray;
+  padding: 8px 10px;
+  border: 2px solid var(--color-gray);
 }
 .form-container {
   max-width: 90%;
@@ -15,6 +20,7 @@ form input {
   padding: 10px;
   margin: 50px auto;
   background-color: rgb(242, 243, 247);
+  color: var(--color-gray);
 }
 
 fieldset {
