@@ -1,5 +1,5 @@
 :root {
-  --color-gray: 2px solid rgb(146, 139, 139);
+  --color-gray: rgb(146, 139, 139);
 }
 
 * {
@@ -33,6 +33,7 @@ legend {
   font-size: 22px;
   text-align: center;
   padding: 5px 15px;
+  color: black;
 }
 
 .names {
