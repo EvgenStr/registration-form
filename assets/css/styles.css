@@ -3,6 +3,9 @@
   --font-family: "Ubuntu", "Aria", sans-serif;
   --color-green: rgb(49, 126, 49);
   --color-red: rgb(160, 9, 9);
+  --background-grey: rgb(242, 243, 247);
+  --button-green-light: rgb(98, 174, 101);
+  --button-green-dark: rgba(75, 152, 74, 1);
 }
 
 * {
@@ -23,34 +26,32 @@ form .input {
   color: var(--color-gray);
   font-family: var(--font-family);
 }
+.input:focus:invalid {
+  border: 2px solid var(--color-red);
+}
 
 .input:focus:valid {
   border: 2px solid var(--color-green);
 }
 
-.input:focus:invalid {
-  border: 2px solid var(--color-red);
-}
-
 .form-container {
   max-width: 90%;
   width: 350px;
-  padding: 10px;
+  padding: 15px;
   margin: 50px auto;
-  background-color: rgb(242, 243, 247);
+  background-color: var(--background-grey);
   color: var(--color-gray);
   font-family: var(--font-family);
+  text-align: center;
 }
 
 fieldset {
   border-top: 2px solid gray;
-  text-align: center;
   margin: 0 auto;
 }
 
 legend {
   font-size: 22px;
-  text-align: center;
   padding: 5px 15px;
   color: black;
 }
@@ -59,11 +60,13 @@ legend {
   display: flex;
   justify-content: space-between;
 }
+
 .terms-container {
   margin-top: 15px;
-  text-align: center;
+  text-align: initial;
   font-size: 15px;
 }
+
 .first-name,
 .last-name {
   max-width: 48%;
@@ -78,11 +81,19 @@ legend {
   padding: 10px;
   border: none;
   border-radius: 3px;
-  background: rgb(98, 174, 101);
+  background: var(--button-green-light);
   background: linear-gradient(
     180deg,
-    rgba(98, 174, 101, 1) 0%,
-    rgba(75, 152, 74, 1) 100%
+    var(--button-green-light) 0%,
+    var(--button-green-dark) 100%
   );
   color: white;
+  font-weight: bold;
+}
+.link {
+  text-decoration: none;
+  color: var(--button-green-light);
+}
+.link:hover {
+  color: var(--button-green-dark);
 }
