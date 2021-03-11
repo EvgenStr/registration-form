@@ -1,5 +1,8 @@
 :root {
   --color-gray: rgb(146, 139, 139);
+  --font-family: "Ubuntu", "Aria", sans-serif;
+  --color-green: rgb(49, 126, 49);
+  --color-red: rgb(160, 9, 9);
 }
 
 * {
@@ -9,11 +12,26 @@
 label {
   vertical-align: text-top;
 }
+
 form .input {
   margin-top: 15px;
   padding: 8px 10px;
   border: 2px solid var(--color-gray);
 }
+
+.input::placeholder {
+  color: var(--color-gray);
+  font-family: var(--font-family);
+}
+
+.input:focus:valid {
+  border: 2px solid var(--color-green);
+}
+
+.input:focus:invalid {
+  border: 2px solid var(--color-red);
+}
+
 .form-container {
   max-width: 90%;
   width: 350px;
@@ -21,6 +39,7 @@ form .input {
   margin: 50px auto;
   background-color: rgb(242, 243, 247);
   color: var(--color-gray);
+  font-family: var(--font-family);
 }
 
 fieldset {
