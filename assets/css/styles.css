@@ -12,11 +12,11 @@
   box-sizing: border-box;
 }
 
-label {
-  vertical-align: text-top;
+.width-100 {
+  width: 100%;
 }
 
-form .input {
+.form-container .input {
   margin-top: 15px;
   padding: 8px 10px;
   border: 2px solid var(--color-gray);
@@ -61,19 +61,19 @@ legend {
   justify-content: space-between;
 }
 
-.terms-container {
-  margin-top: 15px;
-  text-align: initial;
-  font-size: 15px;
-}
-
 .first-name,
 .last-name {
   max-width: 48%;
 }
 
-.width-100 {
-  width: 100%;
+.terms-container {
+  margin-top: 15px;
+  text-align: initial;
+  font-size: 15px;
+
+}
+.terms-label {
+  vertical-align: text-top;
 }
 
 .register-btn {
