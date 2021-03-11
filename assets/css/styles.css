@@ -12,28 +12,6 @@
   box-sizing: border-box;
 }
 
-.width-100 {
-  width: 100%;
-}
-
-.form-container .input {
-  margin-top: 15px;
-  padding: 8px 10px;
-  border: 2px solid var(--color-gray);
-}
-
-.input::placeholder {
-  color: var(--color-gray);
-  font-family: var(--font-family);
-}
-.input:focus:invalid {
-  border: 2px solid var(--color-red);
-}
-
-.input:focus:valid {
-  border: 2px solid var(--color-green);
-}
-
 .form-container {
   max-width: 90%;
   width: 350px;
@@ -45,15 +23,35 @@
   text-align: center;
 }
 
-fieldset {
+.form-container .input {
+  margin-top: 15px;
+  padding: 8px 10px;
+  width: 100%;
+  border: 2px solid var(--color-gray);
+}
+
+.form-container fieldset {
   border-top: 2px solid gray;
   margin: 0 auto;
 }
 
-legend {
+.form-container legend {
   font-size: 22px;
   padding: 5px 15px;
   color: black;
+}
+.input::placeholder {
+  color: var(--color-gray);
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+
+.input:focus:invalid {
+  border: 2px solid var(--color-red);
+}
+
+.input:focus:valid {
+  border: 2px solid var(--color-green);
 }
 
 .names {
@@ -70,13 +68,14 @@ legend {
   margin-top: 15px;
   text-align: initial;
   font-size: 15px;
-
 }
+
 .terms-label {
   vertical-align: text-top;
 }
 
 .register-btn {
+  width: 100%;
   margin-top: 20px;
   padding: 10px;
   border: none;
@@ -90,10 +89,12 @@ legend {
   color: white;
   font-weight: bold;
 }
+
 .link {
   text-decoration: none;
   color: var(--button-green-light);
 }
+
 .link:hover {
   color: var(--button-green-dark);
 }
